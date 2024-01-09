@@ -10,11 +10,12 @@ FallDownLayoutAnimation for Layout View
     android:layoutAnimation="@anim/layout_animation_fall_down"/>
   
 - Restart Programmatically
-  public void startFallDowLayoutAnimation(final RecyclerView recyclerView) {
-		final Context context = recyclerView.getContext();
-		final LayoutAnimationController controller =
-				AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
-		recyclerView.setLayoutAnimation(controller);
-		recyclerView.getAdapter().notifyDataSetChanged();
-		recyclerView.scheduleLayoutAnimation();
-	}
+  
+public void startFallDowLayoutAnimation(final RecyclerView recyclerView) {
+	final Context context = recyclerView.getContext();
+	final LayoutAnimationController controller =
+			AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
+	recyclerView.setLayoutAnimation(controller);
+	recyclerView.getAdapter().notifyDataSetChanged();
+	recyclerView.scheduleLayoutAnimation();
+}
