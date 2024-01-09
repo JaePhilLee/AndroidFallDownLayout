@@ -14,7 +14,6 @@ FallDownLayoutAnimation for Layout View
 		final Context context = recyclerView.getContext();
 		final LayoutAnimationController controller =
 				AnimationUtils.loadLayoutAnimation(context, R.anim.layout_animation_fall_down);
-
 		recyclerView.setLayoutAnimation(controller);
 		recyclerView.getAdapter().notifyDataSetChanged();
 		recyclerView.scheduleLayoutAnimation();
